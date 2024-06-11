@@ -1,4 +1,4 @@
 from .base_color import *
 from .eccv16 import *
 from .siggraph import *
-from .util import *
+from .utlis import *
