@@ -11,7 +11,7 @@ colorizer_eccv16 = eccv16(pretrained=True).eval()
 colorizer_siggraph17 = siggraph17(pretrained=True).eval()
 
 use_gpu = torch.cuda.is_available()
-
+print(use_gpu)
 if use_gpu:
     colorizer_eccv16.cuda()
     colorizer_siggraph17.cuda()

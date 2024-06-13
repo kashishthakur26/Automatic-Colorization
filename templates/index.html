@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Colorization</title>
+  </head>
+  <body>
+    <h1>Upload an image to colorize</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Upload">
+    </form>
+    {% if image_url %}
+      <h2>Colorized Image</h2>
+      <img src="{{ image_url }}" alt="Colorized Image">
+    {% endif %}
+  </body>
+</html>
